@@ -365,3 +365,6 @@ FodyWeavers.xsd
 /Intermediate
 /Saved
 /Content/StarterContent
+
+# Riderlink plugin
+Plugins/Developer/RiderLink
