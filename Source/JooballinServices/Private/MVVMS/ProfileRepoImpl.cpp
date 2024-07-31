@@ -9,7 +9,7 @@
 // CONSTRUCTOR
 // -------------------------------------
 FProfileRepoImpl::FProfileRepoImpl()
-	: ProfileFilePath(FPaths::Combine(FPaths::ProjectContentDir(), "JooballinUE", "MVVMS", "Profile.json"))
+	: ProfileFilePath(FPaths::Combine(FPaths::GameSourceDir(), "JooballinUE", "Private", "MVVMS", "Profile.json"))
 {
 }
 

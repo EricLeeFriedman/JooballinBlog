@@ -368,3 +368,4 @@ FodyWeavers.xsd
 
 # Riderlink plugin
 Plugins/Developer/RiderLink
+.idea/
