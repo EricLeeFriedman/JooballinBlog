@@ -368,4 +368,5 @@ FodyWeavers.xsd
 
 # Riderlink plugin
 Plugins/Developer/RiderLink
-.idea/
+/.idea/
+/.idea/.idea.JooballinUE/.idea/workspace.xml
