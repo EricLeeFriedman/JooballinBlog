@@ -1,4 +1,5 @@
-﻿
+﻿// License Copyright (c) 2024 Eric Friedman
+
 // Includes
 // -------------------------------------
 #include "JooballinServices.h"

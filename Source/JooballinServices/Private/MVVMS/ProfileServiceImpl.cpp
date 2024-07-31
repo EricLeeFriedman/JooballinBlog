@@ -13,9 +13,9 @@ FProfileServiceImpl::FProfileServiceImpl(const TSharedRef<IProfileRepo> InProfil
 {
 }
 
-// GetProfile
+// GetProfileAsync
 // -------------------------------------
 /*virtual*/ TFuture<FProfile> FProfileServiceImpl::GetProfileAsync() const
 {
-	return ProfileRepo->GetProfile();
+	return ProfileRepo->GetProfileAsync();
 }

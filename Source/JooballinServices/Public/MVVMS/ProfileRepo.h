@@ -7,13 +7,13 @@
 struct FProfile;
 
 /**
- * 
+ * Interface for a simple profile repository interface.
  */
 class IProfileRepo
 {
 public:
 	virtual ~IProfileRepo() = default;
 	
-	virtual TFuture<FProfile> GetProfile() const = 0;
+	virtual TFuture<FProfile> GetProfileAsync() const = 0;
 };
 Expose_TNameOf(IProfileRepo);

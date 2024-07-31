@@ -13,9 +13,9 @@ FProfileRepoImpl::FProfileRepoImpl()
 {
 }
 
-// GetProfile
+// GetProfileAsync
 // -------------------------------------
-/*virtual*/ TFuture<FProfile> FProfileRepoImpl::GetProfile() const
+/*virtual*/ TFuture<FProfile> FProfileRepoImpl::GetProfileAsync() const
 {
 	TSharedRef<TPromise<FProfile>> Promise = MakeShared<TPromise<FProfile>>();
 	AsyncTask(ENamedThreads::AnyBackgroundThreadNormalTask, [this, Promise]()

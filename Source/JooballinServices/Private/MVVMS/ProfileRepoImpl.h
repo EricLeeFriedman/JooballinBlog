@@ -8,7 +8,7 @@
 
 
 /**
- * 
+ * Simple implementation of IProfileRepo that uses a json file to load a profile.
  */
 class FProfileRepoImpl final : public IProfileRepo
 {
@@ -17,7 +17,7 @@ public:
 
 protected:
 	//~ Begin IProfileRepo Interface
-	virtual TFuture<FProfile> GetProfile() const override;
+	virtual TFuture<FProfile> GetProfileAsync() const override;
 	//~ End IProfileRepo Interface
 
 private:

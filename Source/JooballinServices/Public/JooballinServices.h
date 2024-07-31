@@ -1,4 +1,6 @@
-﻿#pragma once
+﻿// License Copyright (c) 2024 Eric Friedman
+
+#pragma once
 
 // Includes
 // -------------------------------------
@@ -15,8 +17,10 @@ public:
     static JOOBALLINSERVICES_API TTypeContainer<>& GetTypeContainer();
 
 protected:
+    //~ Begin IModuleInterface Interface
     virtual void StartupModule() override;
     virtual void ShutdownModule() override;
+    //~ End IModuleInterface Interface
 
 private:
     static TTypeContainer<> TypeContainer;

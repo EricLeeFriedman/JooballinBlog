@@ -10,7 +10,7 @@
 #include "Serialization/JsonSerializerMacros.h"
 
 /**
- * 
+ * Model representing a user profile.
  */
 struct FProfile final : FJsonSerializable
 {

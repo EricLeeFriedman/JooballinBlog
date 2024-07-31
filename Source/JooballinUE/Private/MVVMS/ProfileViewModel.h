@@ -16,7 +16,7 @@
 class IProfileService;
 
 /**
- * 
+ * ViewModel to demonstrate using a service to load a user profile.
  */
 UCLASS()
 class JOOBALLINUE_API UProfileViewModel : public UMVVMViewModelBase

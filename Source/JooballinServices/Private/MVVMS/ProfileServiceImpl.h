@@ -11,7 +11,7 @@
 class IProfileRepo;
 
 /**
- * 
+ * Simple implementation of IProfileService that uses a profile repository to load a profile.
  */
 class FProfileServiceImpl final : public IProfileService
 {
