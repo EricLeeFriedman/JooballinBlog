@@ -7,7 +7,7 @@
 struct FProfile;
 
 /**
- * Interface for a simple profile repository interface.
+ * Interface for a simple profile repository.
  */
 class IProfileRepo
 {

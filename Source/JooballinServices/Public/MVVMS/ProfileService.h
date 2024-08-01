@@ -7,7 +7,7 @@
 struct FProfile;
 
 /**
- * Interface for a simple profile service interface.
+ * Interface for a simple profile service.
  */
 class IProfileService
 {

@@ -8,7 +8,7 @@
 
 // CONSTRUCTOR
 // -------------------------------------
-FProfileServiceImpl::FProfileServiceImpl(const TSharedRef<IProfileRepo> InProfileRepo)
+FProfileServiceImpl::FProfileServiceImpl(const TSharedRef<IProfileRepo>& InProfileRepo)
 	: ProfileRepo(InProfileRepo)
 {
 }

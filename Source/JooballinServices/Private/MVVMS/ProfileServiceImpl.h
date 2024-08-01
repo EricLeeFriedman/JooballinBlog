@@ -16,7 +16,7 @@ class IProfileRepo;
 class FProfileServiceImpl final : public IProfileService
 {
 public:
-	explicit FProfileServiceImpl(const TSharedRef<IProfileRepo> InProfileRepo);
+	explicit FProfileServiceImpl(const TSharedRef<IProfileRepo>& InProfileRepo);
 
 protected:
 	//~ Begin IProfileService Interface
