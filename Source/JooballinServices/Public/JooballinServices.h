@@ -25,3 +25,9 @@ protected:
 private:
     static TTypeContainer<> TypeContainer;
 };
+
+template <class T>
+TSharedRef<T> GetService()
+{
+    return FJooballinServicesModule::GetTypeContainer().GetInstance<T>();
+}

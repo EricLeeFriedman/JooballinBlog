@@ -11,10 +11,6 @@
 // Auto-generated
 #include "ProfileViewModel.generated.h"
 
-// Forward Declarations
-// -------------------------------------
-class IProfileService;
-
 /**
  * ViewModel to demonstrate using a service to load a user profile.
  */
@@ -24,10 +20,6 @@ class UProfileViewModel : public UMVVMViewModelBase
 	GENERATED_BODY()
 
 public:
-	UProfileViewModel();
-	explicit UProfileViewModel(FVTableHelper& Helper);
-	virtual ~UProfileViewModel() override;
-
 	// Begin MVVM Method Declarations
 	// -------------------------------------
 	UFUNCTION(BlueprintCallable)
@@ -35,8 +27,6 @@ public:
 	// -------------------------------------
 	
 private:
-	TSharedRef<IProfileService> ProfileService;
-
 	// Begin MVVM Property Declarations
 	// -------------------------------------
 	UPROPERTY(BlueprintReadOnly, FieldNotify, meta=(AllowPrivateAccess))

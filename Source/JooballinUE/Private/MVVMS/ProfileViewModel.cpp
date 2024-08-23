@@ -8,30 +8,12 @@
 #include "MVVMS/Profile.h"
 #include "MVVMS/ProfileService.h"
 
-// CONSTRUCTOR
-// -------------------------------------
-UProfileViewModel::UProfileViewModel()
-	: ProfileService(FJooballinServicesModule::GetTypeContainer().GetInstance<IProfileService>())
-{
-}
-
-// CONSTRUCTOR
-// -------------------------------------
-UProfileViewModel::UProfileViewModel(FVTableHelper& Helper)
-	: Super(Helper)
-	, ProfileService(FJooballinServicesModule::GetTypeContainer().GetInstance<IProfileService>())
-{
-}
-
-// DESTRUCTOR
-// -------------------------------------
-/*virtual*/ UProfileViewModel::~UProfileViewModel() = default;
-
 // LoadProfile
 // -------------------------------------
 void UProfileViewModel::LoadProfile()
 {
 	UE_MVVM_SET_PROPERTY_VALUE(bIsProfileLoading, true);
+	const TSharedRef<IProfileService> ProfileService = GetService<IProfileService>();
 	ProfileService->GetProfileAsync().Next([this](const FProfile& Profile)
 	{
 		AsyncTask(ENamedThreads::GameThread, [this, Profile]()

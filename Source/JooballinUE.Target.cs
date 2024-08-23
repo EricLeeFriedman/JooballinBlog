@@ -10,12 +10,9 @@ public class JooballinUETarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.Latest;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		ExtraModuleNames.Add("JooballinUE");
-		RegisterModulesCreatedByRider();
-	}
-
-	private void RegisterModulesCreatedByRider()
-	{
-		ExtraModuleNames.AddRange(new string[] { "JooballinServices" });
+		ExtraModuleNames.AddRange(new string[]
+		{
+			"JooballinUE"
+		});
 	}
 }
