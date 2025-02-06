@@ -1,4 +1,4 @@
-﻿// License Copyright (c) 2024 Eric Friedman
+﻿// License Copyright (c) 2025 Eric Friedman
 
 #pragma once
 

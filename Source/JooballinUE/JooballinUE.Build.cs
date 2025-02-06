@@ -22,7 +22,8 @@ public class JooballinUE : ModuleRules
 		{
 			"JooballinServices",
 			"Json",
-			"ModelViewViewModel"
+			"ModelViewViewModel",
+			"UMG"
 		});
 	}
 }
