@@ -2,9 +2,9 @@
 
 #pragma once
 
-// Forward Declarations
+// Includes
 // -------------------------------------
-struct FProfile;
+#include "Profile.h"
 
 /**
  * Interface for a simple profile repository.
